@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "buxin:diamond_2"
+    },
+    "4": {
+      "item": "minecraft:shield"
+    },
+    "5": {
+      "item": "buxin:diamond_2"
+    },
+    "6": {
+      "item": "buxin:diamond_2"
+    },
+    "7": {
+      "item": "buxin:diamond_2"
+    },
+    "8": {
+      "item": "buxin:diamond_2"
+    }
+  },
+  "result": {
+    "item": "buxin:black_shield_2",
+    "count": 1
+  }
+}

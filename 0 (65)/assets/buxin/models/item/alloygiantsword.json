@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/alloy_giant_sword",
+  "textures": {
+    "0": "buxin:blocks/alloy_giant_sword",
+    "particle": "buxin:items/alloy_giant_sword"
+  }
+}

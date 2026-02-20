@@ -1,0 +1,7 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "buxin:blocks/dwda"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/jin_zuan_qiao_",
+  "textures": {
+    "0": "villager_dusk:blocks/jin_zuan_qiao_",
+    "particle": "villager_dusk:items/jin_zuan_qiao_"
+  }
+}

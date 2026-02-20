@@ -1,0 +1,43 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zhan_shen_zhi_ren_ - Converted.new": {
+			"animation_length": 1.25,
+			"bones": {
+				"bone": {
+					"position": {
+						"0.0": {
+							"vector": [0, -42, 0]
+						},
+						"0.5": {
+							"vector": [0, 5, 0]
+						},
+						"0.75": {
+							"vector": [0, 5, 0]
+						},
+						"1.25": {
+							"vector": [0, -47, 0]
+						}
+					}
+				},
+				"bone2": {
+					"scale": {
+						"0.0": {
+							"vector": [0, 1, 0]
+						},
+						"0.5": {
+							"vector": [0.9, 1, 1]
+						},
+						"0.75": {
+							"vector": [0.9, 1, 1]
+						},
+						"1.25": {
+							"vector": [0, 1, 0]
+						}
+					}
+				}
+			}
+		}
+	},
+	"geckolib_format_version": 2
+}

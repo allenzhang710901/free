@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/hei_fu_",
+  "textures": {
+    "0": "villager_dusk:blocks/hei_fu_",
+    "particle": "villager_dusk:items/hei_fu_"
+  }
+}

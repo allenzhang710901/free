@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/gou_zhuang_zuan_shi_jian_",
+  "textures": {
+    "0": "buxin:blocks/gou_zhuang_zuan_shi_jian_",
+    "particle": "buxin:items/gou_zhuang_zuan_shi_jian_"
+  }
+}

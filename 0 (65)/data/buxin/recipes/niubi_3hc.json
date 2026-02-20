@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  2",
+    "34 ",
+    "67 "
+  ],
+  "key": {
+    "2": {
+      "item": "minecraft:redstone_block"
+    },
+    "3": {
+      "item": "minecraft:redstone_wire"
+    },
+    "4": {
+      "item": "minecraft:redstone_block"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:redstone_wire"
+    }
+  },
+  "result": {
+    "item": "buxin:niubi_3",
+    "count": 1
+  }
+}

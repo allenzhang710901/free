@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/blue_sword.item",
+  "textures": {
+    "layer0": "buxin:items/oooppp"
+  }
+}

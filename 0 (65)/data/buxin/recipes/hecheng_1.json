@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:snakebs"
+    },
+    "3": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "4": {
+      "item": "buxin:snakebs"
+    },
+    "5": {
+      "item": "buxin:snakebs"
+    },
+    "6": {
+      "item": "minecraft:stick"
+    },
+    "7": {
+      "item": "minecraft:amethyst_shard"
+    }
+  },
+  "result": {
+    "item": "buxin:dual_she_ren_longknife",
+    "count": 1
+  }
+}

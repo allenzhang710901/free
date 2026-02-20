@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/xing_huo_liao_yuan_zhi_ren_",
+  "textures": {
+    "1": "villager_dusk:blocks/xing_huo_liao_yuan_zhi_ren_",
+    "particle": "villager_dusk:items/xing_huo_liao_yuan_zhi_ren_"
+  }
+}

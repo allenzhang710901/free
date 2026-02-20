@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:snakebs"
+    },
+    "3": {
+      "item": "buxin:snakebs"
+    },
+    "4": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "5": {
+      "item": "buxin:snakebs"
+    },
+    "6": {
+      "item": "buxin:snakebs"
+    },
+    "7": {
+      "item": "buxin:specail_stick"
+    },
+    "8": {
+      "item": "buxin:snakebs"
+    }
+  },
+  "result": {
+    "item": "buxin:yingchui",
+    "count": 1
+  }
+}

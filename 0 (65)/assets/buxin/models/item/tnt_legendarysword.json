@@ -1,0 +1,8 @@
+{
+  "parent": "buxin:custom/tnt_legenysword",
+  "textures": {
+    "0": "buxin:blocks/legensword",
+    "1": "buxin:blocks/tnt_small",
+    "particle": "buxin:items/legensword"
+  }
+}

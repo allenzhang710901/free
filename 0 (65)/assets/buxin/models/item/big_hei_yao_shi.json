@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/hei_yao_shi_da",
+  "textures": {
+    "0": "buxin:blocks/heiyaoshi",
+    "particle": "buxin:items/hei_yao_shi"
+  }
+}

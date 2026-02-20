@@ -1,0 +1,11 @@
+{
+  "parent": "villager_dusk:custom/she_ren_",
+  "textures": {
+    "0": "villager_dusk:blocks/she_ren_1",
+    "1": "villager_dusk:blocks/she_ren_2",
+    "2": "villager_dusk:blocks/she_ren_3",
+    "3": "villager_dusk:blocks/she_ren_4",
+    "8": "villager_dusk:blocks/she_ren_5",
+    "particle": "villager_dusk:items/she_ren_"
+  }
+}

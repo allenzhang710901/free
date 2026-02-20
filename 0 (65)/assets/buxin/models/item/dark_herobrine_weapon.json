@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/dark_herobrine_weapon",
+  "textures": {
+    "0": "buxin:blocks/dark_herobrine_weapon",
+    "particle": "buxin:items/dark_herobrine_weapon"
+  }
+}

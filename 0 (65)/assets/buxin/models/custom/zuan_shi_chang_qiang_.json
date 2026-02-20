@@ -1,0 +1,33 @@
+{
+  "credit": "Made by Unity",
+  "gui_light": "front",
+    "parent": "builtin/generated",
+    "textures": {
+        "layer0": "item/diamond_sword/24"
+    },
+    "display": {
+        "thirdperson_righthand": {
+            "rotation": [ 0, -90, 55 ],
+            "translation": [ 0, 7, 0 ],
+            "scale": [ 2, 2, 1.1 ]
+        },
+        "thirdperson_lefthand": {
+            "rotation": [ 0, -90, -35 ],
+            "translation": [ 0, 7, 0 ],
+            "scale": [ 2, 2, 1.1 ]
+        },
+        "firstperson_righthand": {
+            "rotation": [ 0, -90, 55 ],
+            "translation": [ 1.13, 3.2, 1.13 ],
+            "scale": [ 1, 1, 0.8 ]
+        },
+        "firstperson_lefthand": {
+            "rotation": [ 0, -90, -55 ],
+            "translation": [ 1.13, 3.2, 1.13 ],
+            "scale": [ 1, 1, 0.8 ]
+        },
+		"ground": {
+			"scale": [0.6, 0.6, 0.6]
+		}
+	}
+}

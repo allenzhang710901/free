@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/star_legend_sword.item",
+  "textures": {
+    "layer0": "buxin:items/114514"
+  }
+}

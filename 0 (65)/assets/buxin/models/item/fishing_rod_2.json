@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/1cast",
+  "textures": {
+    "0": "buxin:blocks/rod",
+    "particle": "buxin:items/rod"
+  }
+}

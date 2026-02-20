@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/sarpa_released.item",
+  "textures": {
+    "layer0": "buxin:items/rainbow_snake_sword"
+  }
+}

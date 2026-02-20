@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/te_shu_zuan_shi_dun_pai_",
+  "textures": {
+    "0": "villager_dusk:blocks/te_shu_zuan_shi_dun_pai_",
+    "particle": "villager_dusk:items/te_shu_zuan_shi_dun_pai_"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "buxin:custom/model",
+  "textures": {
+    "1": "buxin:items/hard_great_sword",
+    "2": "buxin:items/hard_great_sword_skill",
+    "particle": "buxin:items/hard_great_sword"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "villager_dusk:items/zuan_shi_chang_mao_"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/xia_jie_he_jin_zhi_ren_",
+  "textures": {
+    "1": "villager_dusk:blocks/xia_jie_he_jin_zhi_ren_",
+    "particle": "villager_dusk:items/xia_jie_he_jin_zhi_ren_"
+  }
+}

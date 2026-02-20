@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/bedrock",
+  "textures": {
+    "0": "villager_dusk:blocks/bedrock",
+    "particle": "villager_dusk:items/bedrock"
+  }
+}

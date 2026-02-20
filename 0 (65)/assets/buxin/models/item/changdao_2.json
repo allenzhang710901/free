@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/she_ren_chang_dao_",
+  "textures": {
+    "0": "buxin:blocks/she_ren_chang_dao_",
+    "particle": "buxin:items/she_ren_chang_dao_"
+  }
+}

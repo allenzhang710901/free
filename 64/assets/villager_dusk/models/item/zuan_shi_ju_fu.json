@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/zuan_shi_ju_fu_",
+  "textures": {
+    "layer0": "villager_dusk:blocks/zuan_shi_ju_fu_",
+    "particle": "villager_dusk:items/zuan_shi_ju_fu_"
+  }
+}

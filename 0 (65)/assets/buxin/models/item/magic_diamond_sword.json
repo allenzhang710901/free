@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/lan_yan_jian_",
+  "textures": {
+    "0": "buxin:blocks/lan_yan_jian_",
+    "particle": "buxin:items/lan_yan_jian_"
+  }
+}

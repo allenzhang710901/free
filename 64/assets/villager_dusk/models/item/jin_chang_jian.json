@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/jin_chang_jian_",
+  "textures": {
+    "0": "villager_dusk:blocks/jin_chang_jian_",
+    "particle": "villager_dusk:items/jin_chang_jian_"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:better_diamond_block"
+    },
+    "3": {
+      "item": "buxin:better_diamond_block"
+    },
+    "4": {
+      "item": "minecraft:obsidian"
+    },
+    "5": {
+      "item": "buxin:better_diamond_block"
+    },
+    "6": {
+      "item": "buxin:better_diamond_block"
+    },
+    "7": {
+      "item": "buxin:specail_stick"
+    },
+    "8": {
+      "item": "buxin:better_diamond_block"
+    }
+  },
+  "result": {
+    "item": "buxin:niubi_2danshou",
+    "count": 1
+  }
+}

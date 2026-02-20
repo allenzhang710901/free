@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/zi_se_hei_yao_shi_tu_ci_2",
+  "textures": {
+    "0": "villager_dusk:blocks/zi_se_hei_yao_shi_",
+    "particle": "villager_dusk:items/zi_se_hei_yao_shi_tu_ci_2"
+  }
+}

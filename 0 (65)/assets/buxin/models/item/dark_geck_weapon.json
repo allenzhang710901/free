@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/dark_herobrine_weapon_geck.item",
+  "textures": {
+    "layer0": "buxin:items/dark_herobrine_weapon"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/zhan_shen_she_ren_",
+  "textures": {
+    "0": "buxin:blocks/texture",
+    "particle": "buxin:items/hong_se_zhan_shen_zhi_ren_"
+  }
+}

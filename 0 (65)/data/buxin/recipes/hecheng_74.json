@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "buxin:diamond_2"
+    },
+    "1": {
+      "item": "buxin:qibinjian"
+    },
+    "2": {
+      "item": "buxin:specail_stick"
+    }
+  },
+  "result": {
+    "item": "buxin:woopie",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/an_ying_hei_yao_shi_",
+  "textures": {
+    "0": "villager_dusk:blocks/an_ying_hei_yao_shi_",
+    "particle": "villager_dusk:items/an_ying_hei_yao_shi_"
+  }
+}

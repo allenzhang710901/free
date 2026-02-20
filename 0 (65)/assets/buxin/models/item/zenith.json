@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/zenith",
+  "textures": {
+    "0": "buxin:blocks/zenith",
+    "particle": "buxin:items/zenith"
+  }
+}

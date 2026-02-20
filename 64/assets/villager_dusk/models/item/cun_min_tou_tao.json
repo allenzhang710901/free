@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/cun_min_tou_tao_",
+  "textures": {
+    "0": "villager_dusk:blocks/cun_min_tou_tao_",
+    "particle": "villager_dusk:items/cun_min_tou_tao_"
+  }
+}

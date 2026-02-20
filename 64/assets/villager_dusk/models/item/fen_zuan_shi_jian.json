@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/fen_zuan_shi_jian_",
+  "textures": {
+    "0": "villager_dusk:blocks/fen_zuan_shi_jian_",
+    "particle": "villager_dusk:items/fen_zuan_shi_jian_"
+  }
+}

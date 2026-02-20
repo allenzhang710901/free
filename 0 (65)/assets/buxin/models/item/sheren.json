@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/sarpa_released.item",
+  "textures": {
+    "layer0": "buxin:items/sarpa_released_2"
+  }
+}

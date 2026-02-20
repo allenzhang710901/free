@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/duan_dao_",
+  "textures": {
+    "0": "villager_dusk:blocks/duan_dao_",
+    "particle": "villager_dusk:items/duan_dao_"
+  }
+}

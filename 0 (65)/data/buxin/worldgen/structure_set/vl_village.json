@@ -1,0 +1,31 @@
+{
+  // What structures to pick to try and spawn if a spot passes the placement check.
+  // 可以生成那些structures
+  // If two or more structures in this list can spawn in a biome at a spot, a random one based on weight is chosen to spawn
+  // 如果有多个建筑在这里，会按照权值随机生成一个。
+  "structures": [
+{
+"structure": "buxin:vl_village",
+"weight": 1
+}
+],
+"placement": {
+// Make sure this is unique and does not match any other structure set&#39;s salt
+// 保证唯一性不要匹配其他建筑set的salt值
+"salt": 1642136474,
+
+// The average distance apart in chunks for spawn attempts
+// 平均每距离多少个区块生成尝试生成一个。
+"spacing": 20,
+
+// Minimum distance apart in chunks for spawn attempts
+// 最小隔离多少区块
+// MUST ALWAYS BE SMALLER THAN spacing ABOVE
+// 此数值应该小于平均数值
+"separation": 6,
+
+// The kind of placement to use. The other kind is ring based like strongholds use.
+// 采用何种方式，
+"type": "minecraft:random_spread"
+}
+}

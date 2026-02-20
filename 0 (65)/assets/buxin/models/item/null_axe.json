@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/null_axe",
+  "textures": {
+    "0": "buxin:item/null_axe",
+    "particle": "buxin:item/null_axe"
+  }
+}

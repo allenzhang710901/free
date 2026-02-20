@@ -1,0 +1,49 @@
+{
+  // More info on template pools can be found here: https://minecraft.gamepedia.com/Custom_world_generation#JSON_format_8
+  // 更多的信息查看: https://minecraft.gamepedia.com/Custom_world_generation#JSON_format_8
+  // Yes, worldgen json files can have comments. Minecraft does "lenient" parsing of these json files.
+  //
+  // This is the name of the template pool itself. I tend to just put the file path and file name here with modid.
+  "name": "buxin:buxin_house/start_pool",
+
+// The template pool to refer to if the entries in &#39;elements&#39; fails to generate.
+// 生成失败的时候，会使用那个条目
+"fallback": "minecraft:empty",
+
+// Here you can list as many nbt files or placed features to spawn.
+// Do note that placed features needs a special element entry stuff.
+// 在这里列出nbt的文件和生成的features
+"elements": [
+{
+
+// How likely out of all the element for this one to be chosen.
+//  被选中的概率
+"weight": 1,
+"element": {
+
+// The Identifier of the nbt file itself of the structure piece.
+// Note, this will automatically check into the &#39;structures&#39; folder for the nbt file.
+// The final path would look like &#39;resources/data/tutorialmod/structures/run_down_house_left_side.nbt&#39;
+// The Jigsaw block in the structure will point to side_pool.json to spawn the other half of the house.
+// nbt位置
+"location": "buxin:vl_village",
+
+// Processor JSON files can be used to randomize or replace blocks dynamically. Here, we don&#39;t do any of that.
+// 随机化或者替换方块使用，这里不使用
+"processors": "minecraft:empty",
+
+// If set to &#39;terrain_matching&#39;, the house would be deformed to fit the change in land.
+// That&#39;s best for roads so lets stay &#39;rigid&#39; for now.
+// rigid刚体，不变型
+"projection": "rigid",
+
+// The kind of element we are spawning. This one is most likely what you want.
+// There&#39;s &#39;minecraft:legacy_single_pool_element&#39; but that swaps the behavior of
+// Air and Structure Void in your piece as well as change the attachment mechanism.
+// It&#39;s only for old Vanilla Jigsaw Structures so don&#39;t use it. Stick with non-legacy.
+// 生成的元素类型，这里选择单个
+"element_type": "minecraft:single_pool_element"
+}
+}
+]
+}

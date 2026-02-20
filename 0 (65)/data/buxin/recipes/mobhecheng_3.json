@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    "67 "
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:snakebs"
+    },
+    "2": {
+      "item": "buxin:srj"
+    },
+    "3": {
+      "item": "buxin:snakebs"
+    },
+    "4": {
+      "item": "buxin:srzj"
+    },
+    "5": {
+      "item": "buxin:snakebs"
+    },
+    "6": {
+      "item": "buxin:srjb"
+    },
+    "7": {
+      "item": "buxin:snakebs"
+    }
+  },
+  "result": {
+    "item": "buxin:jshaman_2_spawn_egg",
+    "count": 1
+  }
+}

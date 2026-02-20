@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/ice_and_fire_sword.item",
+  "textures": {
+    "layer0": "buxin:items/ice_and_fire_sword"
+  }
+}

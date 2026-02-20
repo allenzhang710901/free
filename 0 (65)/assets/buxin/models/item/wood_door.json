@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/wood_door",
+  "textures": {
+    "0": "buxin:blocks/1.1",
+    "particle": "buxin:items/1.1"
+  }
+}

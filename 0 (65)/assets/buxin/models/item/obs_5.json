@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/obs5",
+  "textures": {
+    "0": "buxin:blocks/dark_obsidian",
+    "particle": "buxin:items/1"
+  }
+}

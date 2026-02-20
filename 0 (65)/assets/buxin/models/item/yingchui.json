@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/ying_chui_",
+  "textures": {
+    "0": "buxin:blocks/ying_chui_",
+    "particle": "buxin:items/ying_chui_"
+  }
+}

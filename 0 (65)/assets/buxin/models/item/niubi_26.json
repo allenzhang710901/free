@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/gong_zuo_tai_",
+  "textures": {
+    "0": "buxin:blocks/gong_zuo_tai_",
+    "particle": "buxin:items/gong_zuo_tai_"
+  }
+}

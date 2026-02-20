@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/null_pickaxe",
+  "textures": {
+    "0": "buxin:item/null_pickaxe",
+    "particle": "buxin:item/null_pickaxe"
+  }
+}

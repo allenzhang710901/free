@@ -1,0 +1,1380 @@
+{
+	"model": "epicfight:entity/biped",
+	"armature": "epicfight:entity/biped",
+	"renderer": "player", 
+	"isHumanoid": true,
+	"faction": "undead",
+	"attributes": {
+		"impact": 0.0,
+		"armor_negation": 0.0,
+		"max_strikes": 195,
+		"chasing_speed": 1.5,
+        "scale": 1.0,
+		"counter_chance": 0.3,
+		"counter_cost": 1.0,
+		"block_stamina": 650.0,
+		"stamina_cost_multiply": 0.2,
+		"can_block_projectile": true
+	},
+	"default_livingmotions": {
+		"idle": "epicfight:biped/living/idle",
+		"walk": "epicfight:biped/living/walk",
+		"chase": "epicfight:biped/living/run",
+		"death": "epicfight:enderman/convert_rage"
+	},
+	"humanoid_weapon_motions": [
+		  {
+			"weapon_categories": ["axe", "hoe", "pickaxe", "shovel", "sword"],
+			"style":"common",
+			"livingmotions": {
+				"chase": "epicfight:biped/living/run",
+                "walk": "epicfight:biped/living/walk"
+			}
+		  },
+              { 
+                  "weapon_categories": ["longsword"],
+                  "style":"common", 
+                  "livingmotions": {
+                        "chase": "epicfight:biped/living/hold_longsword",
+                        "walk": "epicfight:biped/living/hold_longsword"
+                  }
+              }
+	],
+	"custom_guard_motion": [
+            { 
+                  "weapon_categories": ["longsword","tachi"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_longsword",
+				  "counter": "indestructible:guard/counter",
+				  "speed": 3
+            },
+			{ 
+                  "weapon_categories": ["axe", "hoe", "pickaxe", "shovel", "sword", "katana"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_sword",
+				  "counter": "wom:biped/combat/katana_sheathed_auto_3",
+				  "speed": 3
+            },
+			{ 
+                  "weapon_categories": ["sword"],
+                  "style":"two_hand", 
+                  "guard": "indestructible:guard/guard_dualsword",
+				  "counter": "epicfight:biped/combat/sword_dual_auto3",
+				  "speed": 3
+            },
+			{ 
+                  "weapon_categories": ["katana"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_katana",
+				  "counter": "indestructible:guard/counter",
+				  "speed": 1
+            },
+			{ 
+                  "weapon_categories": ["greatsword"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_greatsword",
+				  "counter": "indestructible:guard/counter",
+				  "speed": 1
+            },
+			{ 
+                  "weapon_categories": ["spear"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_spear",
+				  "counter": "indestructible:guard/counter",
+				  "speed": 1
+            }
+			
+	],
+	"stun_animations": {
+		"short": "epicfight:biped/combat/hit_short",
+		"long": "epicfight:biped/combat/hit_long",
+		"knockdown": "epicfight:biped/combat/knockdown",
+		"fall": "epicfight:biped/living/landing"
+	},
+	"combat_behavior": [
+            {
+			"weapon_categories": ["sword", "axe"],
+			"style": "common",
+			"behavior_series": [
+				{
+					"weight": 75.0,
+					"canBeInterrupted": false,
+					"looping": false,
+                    				"cooldown": 0,
+					"behaviors": [
+						{
+							"conditions": [
+                                {"predicate":"within_distance", "min": 0.0, "max": 2.0},
+                                {"predicate":"attack_level", "min": 1, "max": 2},
+                                {"predicate":"knock_down", "invert": true}, {"predicate": "guard_break", "invert": true}
+							],
+							"guard": 1
+						}
+                    ]                 
+				},
+				{
+					"weight": 100.5,
+					"canBeInterrupted": true,
+					"looping": true,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_airslash",
+							"play_speed": 2.6,
+							"command_list": [
+								{"time":0.5, "command":"item replace entity @s weapon.offhand with annoying_villagersbychentu:gravezscj", "execute_at_target":false}]
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto1",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto2",
+							"play_speed": 2.23
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto3",
+							"play_speed": 2.9
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto4",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "wom:biped/combat/katana_auto_1",
+							"play_speed": 2.62
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "wom:biped/combat/katana_auto_2",
+							"play_speed": 2.42
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_3",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "wom:biped/combat/katana_auto_3",
+							"play_speed": 2.62
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "wom:biped/combat/katana_auto_1",
+							"play_speed": 2.82
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto1",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_dash",
+							"play_speed": 2.9
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_auto1",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_auto2",
+							"play_speed": 2.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_auto3",
+							"play_speed": 2.9
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 3.0, "max": 12.0}, {"predicate":"guard_break", "invert": true},
+								{"predicate":"knock_down", "invert": true}, {"predicate": "stamina", "stamina": 0.3, "comparator": "greater_ratio"}
+							],
+							"guard": 1
+						}
+                        ]                 
+				},
+				{
+					"weight": 10.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.5}
+							],
+							"animation": "epicfight:biped/skill/step_left"
+						}
+					]
+				},
+                {
+					"weight": 5.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 540,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.0, "max": 2.5}
+							],
+							"animation": "epicfight:biped/skill/sweeping_edge",
+							"play_speed": 2.3
+						}
+					]
+				},
+                {
+					"weight": 10.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.5}
+							],
+							"animation": "epicfight:biped/skill/the_guillotine",
+							"play_speed": 4.9
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 500,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.5}
+							],
+							"animation": "wom:biped/combat/enderblaster_onehand_dash",
+							"play_speed": 2.3
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": true,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.8}
+							],
+							"animation": "epicfight:biped/skill/step_backward"
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.8}
+							],
+							"animation": "epicfight:biped/skill/step_forward"
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+                    				"cooldown": 50,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.8}
+							],
+							"animation": "epicfight:biped/skill/roll_backward"
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.8}
+							],
+							"animation": "epicfight:biped/skill/roll_forward"
+						}
+					]
+				},
+                {
+					"weight": 100.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 50,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.0, "max": 7.0}
+							],
+							"animation": "epicfight:biped/skill/step_right"
+						}
+					]
+				},
+				{
+					"weight": 25,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 200,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.5, "max": 3.5},{"predicate": "attack_level", "min":1,"max":8}
+							],
+							"animation": "epicfight:biped/skill/step_right"
+						}
+					]
+				},
+                {
+					"weight": 99,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"guard_break", "invert": false}, {"predicate":"within_eye_height"}
+							],
+							"animation": "epicfight:biped/skill/the_guillotine",
+							"play_speed": 40
+						}
+					]
+				}
+			]
+		},
+	{
+			"weapon_categories": ["sword"],
+			"style": "two_hand",
+			"behavior_series": [
+				{
+					"weight": 50.0,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+                                {"predicate":"within_distance", "min": 0.0, "max": 2.0}
+							],
+							"guard": 1,
+							"counter": "epicfight:biped/combat/dagger_dual_auto2",
+							"counter_cost": 3,
+							"counter_chance": 0.5,
+							"counter_speed": 3
+						}
+                    ]                 
+				},
+				{
+					"weight": 100.5,
+					"canBeInterrupted": false,
+					"looping": true,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 6.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_2_verso",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_airslash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"animation": "wom:biped/combat/agony_airslash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto1",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_1",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto2",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 13.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto2",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_auto1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_auto2",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/dancing_edge",
+							"play_speed": 1.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_3",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/staff_auto_1",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/staff_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/uchigatana_auto2",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/uchigatana_auto1",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/agony_airslash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/antitheus_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/antitheus_auto_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/uchigatana_auto3",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/staff_auto_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_2_verso",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_auto2",
+							"play_speed": 2.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto3",
+							"play_speed": 2.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_3",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto2",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/agony_airslash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_airslash",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "falchionmoveset:biped/falchion/falchion_auto1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "falchionmoveset:biped/falchion/falchion_auto2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "falchionmoveset:biped/falchion/falchion_auto3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "falchionmoveset:biped/falchion/falchion_forward",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto3",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/moonless_auto_3",
+							"play_speed": 2.6
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo1",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo2",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo3",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_3",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_4",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_airslash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/skill/torment_berserk_auto_1",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/skill/torment_berserk_auto_2",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/combat/agony_airslash",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/skill/torment_berserk_auto_1",
+							"play_speed": 2.7
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_airslash",
+							"play_speed": 2.78
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/sword_auto3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_auto1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_2",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "efdg:biped/combat/greatsword_dual_auto_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.5}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo1",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo2",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/skill/blade_rush_combo3",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/skill/kick",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 12.0}
+							],
+							"guard": 1,
+							"counter": "epicfight:biped/combat/dagger_dual_auto3",
+							"counter_cost": 3,
+							"counter_chance": 0.5,
+							"counter_speed": 2
+						}
+                        ]                 
+				},
+				{
+					"weight": 0.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 400,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.5}
+							],
+							"animation": "epicfight:biped/skill/step_left"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto2",
+							"play_speed": 2.2
+						}
+					]
+				},
+                {
+					"weight": 5.5,
+					"canBeInterrupted": false,
+					"looping": false,
+                    				"cooldown": 150,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "indestructible:guard/counter",
+							"play_speed": 2.5
+						}
+					]
+				},
+                {
+					"weight": 10.5,
+					"canBeInterrupted": false,
+					"looping": false,
+                    				"cooldown": 300,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 7.0}
+							],
+							"animation": "epicfight:biped/skill/dancing_edge",
+							"play_speed": 2.7
+						}
+					]
+				},
+                {
+					"weight": 5.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.5}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_dash",
+							"play_speed": 2.59
+						}
+					]
+				},
+                {
+					"weight": 3.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 450,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.5}
+							],
+							"animation": "wom:biped/combat/enderblaster_onehand_dash",
+							"play_speed": 2.5
+						}
+					]
+				},
+                {
+					"weight": 60.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": true,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 2.0}
+							],
+							"animation": "epicfight:biped/skill/step_backward"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto2",
+							"play_speed": 2.7
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.8}
+							],
+							"animation": "epicfight:biped/skill/step_forward"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "epicfight:biped/combat/dagger_dual_auto3",
+							"play_speed": 2.2
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.0}
+							],
+							"animation": "epicfight:biped/skill/roll_backward"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto1",
+							"play_speed": 2.7
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+                    				"cooldown": 50,
+					"looping": false,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.0}
+							],
+							"animation": "epicfight:biped/skill/roll_forward"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_dash",
+							"play_speed": 2.7
+						}
+					]
+				},
+                {
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 20,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 2.0}
+							],
+							"animation": "epicfight:biped/skill/step_right"						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto1",
+							"play_speed": 2.7
+						}
+					]
+				},
+	{
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 50,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.0, "max": 2.0}
+							],
+							"animation": "epicfight:biped/skill/step_right"
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.0}
+							],
+							"animation": "epicfight:biped/combat/sword_dual_auto2",
+							"play_speed": 2.7
+						}
+					]
+				},
+                {
+					"weight": 99,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"guard_break", "invert": false}, {"predicate":"within_eye_height"}
+							],
+							"animation": "epicfight:biped/skill/the_guillotine",
+							"play_speed": 1
+						}
+					]
+				}
+			]
+		},
+	{
+			"weapon_categories": ["longsword"],
+			"style": "common",
+			"behavior_series": [
+				{
+					"weight": 50,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 100,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 3.0, "max": 8.0},{"predicate": "attack_level", "min":1,"max":2}
+							],
+							"guard": 45
+						}
+                    ]                 
+				},
+				{
+					"weight": 0.1,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 60,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 2.0, "max": 12.0}, {"predicate":"guard_break", "invert": true},
+								{"predicate":"knock_down", "invert": true}, {"predicate": "stamina", "stamina": 0.3, "comparator": "greater_ratio"}
+							],
+							"guard": 40
+						}
+                    ]                 
+				},
+				{
+					"weight": 1.5,
+					"canBeInterrupted": true,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "epicfight:wither_skeleton/sword_attack1",
+							"play_speed": 1.1
+						},
+						{
+							"conditions": [
+								{"predicate":"within_eye_height"}
+							],
+							"animation": "epicfight:wither_skeleton/sword_attack2",
+							"play_speed": 1.1
+						},
+						{
+							"conditions": [
+								
+								{"predicate":"within_distance", "min": 3.0, "max": 8.0}, 
+								{"predicate":"within_angle", "min": -30.0, "max": 30.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_dash",
+							"convert_time": 0.15
+						}
+                        ]                 
+				},
+				{
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								
+								{"predicate":"within_distance", "min": 5.0, "max": 8.0}, 
+								{"predicate":"within_angle", "min": -30.0, "max": 30.0}
+							],
+							"animation": "epicfight:biped/combat/longsword_dash",
+							"convert_time": 0.15,
+							"play_speed": 1,
+							"stamina": 3
+						}
+                    ]                 
+				},
+				{
+					"weight": 0.3,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 200,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.5}
+							],
+							"animation": "epicfight:biped/skill/step_left"
+						}
+					]
+				},
+                {
+					"weight": 0.3,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 200,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 1.5}
+							],
+							"animation": "epicfight:biped/skill/step_right"
+						}
+					]
+				},
+				{
+					"weight": 25,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 200,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.5, "max": 3.5},{"predicate": "attack_level", "min":1,"max":2}
+							],
+							"animation": "epicfight:biped/skill/step_left"
+						},
+						{
+							"conditions": [
+								{"predicate":"random_chance", "chance": 0.55}
+							],
+							"animation": "epicfight:biped/combat/greatsword_dash",
+							"play_speed": 1.1
+						}
+					]
+				},
+                {
+					"weight": 25,
+					"canBeInterrupted": false,
+					"looping": false,
+					"cooldown": 200,
+					"behaviors": [
+                        {
+							"conditions": [
+								{"predicate":"within_distance", "min": 1.5, "max": 3.5},{"predicate": "attack_level", "min":1,"max":2}
+							],
+							"animation": "epicfight:biped/skill/step_right"
+						},
+						{
+							"conditions": [
+								{"predicate":"random_chance", "chance": 0.55}
+							],
+							"animation": "epicfight:biped/combat/greatsword_dash",
+							"play_speed": 1.1
+						}
+					]
+				},
+                {
+					"weight": 99,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"guard_break", "invert": false}, {"predicate":"within_eye_height"}
+							],
+							"animation": "epicfight:biped/skill/the_guillotine",
+							"play_speed": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

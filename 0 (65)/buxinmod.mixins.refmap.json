@@ -1,0 +1,106 @@
+{
+  "mappings": {
+    "net/mcreator/buxin/mixin/MixinColorBoltEntity": {
+      "render": "Lnet/minecraft/client/renderer/entity/LightningBoltRenderer;m_7392_(Lnet/minecraft/world/entity/LightningBolt;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+    },
+    "net/mcreator/buxin/mixin/PlayerMixin": {
+      "tick": "Lnet/minecraft/world/entity/player/Player;m_8119_()V"
+    },
+    "net/mcreator/buxin/mixin/ItemEntityMixin": {
+      "tick": "Lnet/minecraft/world/entity/item/ItemEntity;m_8119_()V"
+    },
+    "net/mcreator/buxin/mixin/PortalParticleMixin": {
+      "getLightColor": "Lnet/minecraft/client/particle/PortalParticle;m_6355_(F)I"
+    },
+    "net/mcreator/buxin/mixin/AccessorStatsCounter": {
+      "stats": "f_13013_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;"
+    },
+    "net/mcreator/buxin/mixin/ItemRendererMixin": {
+      "render": "Lnet/minecraft/client/renderer/entity/ItemRenderer;m_115143_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V"
+    },
+    "net/mcreator/buxin/mixin/FlameMixin": {
+      "getLightColor": "Lnet/minecraft/client/particle/FlameParticle;m_6355_(F)I",
+      "getRenderType": "Lnet/minecraft/client/particle/FlameParticle;m_7556_()Lnet/minecraft/client/particle/ParticleRenderType;"
+    },
+    "net/mcreator/buxin/mixin/PlayerMobMixin": {
+      "isBaby": "Lse/gory_moon/player_mobs/entity/PlayerMobEntity;m_6162_()Z",
+      "setBaby": "Lse/gory_moon/player_mobs/entity/PlayerMobEntity;m_6863_(Z)V"
+    },
+    "net/mcreator/buxin/mixin/CowMixin": {
+      "mobInteract": "Lnet/minecraft/world/entity/animal/Cow;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+    },
+    "net/mcreator/buxin/mixin/PolarBearMixin": {
+      "registerGoals": "Lnet/minecraft/world/entity/animal/PolarBear;m_8099_()V"
+    },
+    "net/mcreator/buxin/mixin/ThrownEnderperalMixin": {
+      "onHit": "Lnet/minecraft/world/entity/projectile/ThrownEnderpearl;m_6532_(Lnet/minecraft/world/phys/HitResult;)V",
+      "onHitEntity": "Lnet/minecraft/world/entity/projectile/ThrownEnderpearl;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+    },
+    "net/mcreator/buxin/mixin/MonsterMixin": {
+      "isDarkEnoughToSpawn": "Lnet/minecraft/world/entity/monster/Monster;m_219009_(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z"
+    },
+    "net/mcreator/buxin/mixin/TrailParticleMixin": {
+      "render": "Lyesman/epicfight/client/particle/TrailParticle;m_5744_(Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/Camera;F)V",
+      "Lyesman/epicfight/client/particle/TrailParticle;getLightColor(F)I": "Lyesman/epicfight/client/particle/TrailParticle;m_6355_(F)I"
+    },
+    "net/mcreator/buxin/mixin/GlowEffectMixin": {
+      "endOutlineBatch": "Lnet/minecraft/client/renderer/OutlineBufferSource;m_109928_()V"
+    },
+    "net/mcreator/buxin/mixin/ArrowMixin": {
+      "tick": "Lnet/minecraft/world/entity/projectile/Arrow;m_8119_()V"
+    }
+  },
+  "data": {
+    "searge": {
+      "net/mcreator/buxin/mixin/MixinColorBoltEntity": {
+        "render": "Lnet/minecraft/client/renderer/entity/LightningBoltRenderer;m_7392_(Lnet/minecraft/world/entity/LightningBolt;FFLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;I)V"
+      },
+      "net/mcreator/buxin/mixin/PlayerMixin": {
+        "tick": "Lnet/minecraft/world/entity/player/Player;m_8119_()V"
+      },
+      "net/mcreator/buxin/mixin/ItemEntityMixin": {
+        "tick": "Lnet/minecraft/world/entity/item/ItemEntity;m_8119_()V"
+      },
+      "net/mcreator/buxin/mixin/PortalParticleMixin": {
+        "getLightColor": "Lnet/minecraft/client/particle/PortalParticle;m_6355_(F)I"
+      },
+      "net/mcreator/buxin/mixin/AccessorStatsCounter": {
+        "stats": "f_13013_:Lit/unimi/dsi/fastutil/objects/Object2IntMap;"
+      },
+      "net/mcreator/buxin/mixin/ItemRendererMixin": {
+        "render": "Lnet/minecraft/client/renderer/entity/ItemRenderer;m_115143_(Lnet/minecraft/world/item/ItemStack;Lnet/minecraft/client/renderer/block/model/ItemTransforms$TransformType;ZLcom/mojang/blaze3d/vertex/PoseStack;Lnet/minecraft/client/renderer/MultiBufferSource;IILnet/minecraft/client/resources/model/BakedModel;)V"
+      },
+      "net/mcreator/buxin/mixin/FlameMixin": {
+        "getLightColor": "Lnet/minecraft/client/particle/FlameParticle;m_6355_(F)I",
+        "getRenderType": "Lnet/minecraft/client/particle/FlameParticle;m_7556_()Lnet/minecraft/client/particle/ParticleRenderType;"
+      },
+      "net/mcreator/buxin/mixin/PlayerMobMixin": {
+        "isBaby": "Lse/gory_moon/player_mobs/entity/PlayerMobEntity;m_6162_()Z",
+        "setBaby": "Lse/gory_moon/player_mobs/entity/PlayerMobEntity;m_6863_(Z)V"
+      },
+      "net/mcreator/buxin/mixin/CowMixin": {
+        "mobInteract": "Lnet/minecraft/world/entity/animal/Cow;m_6071_(Lnet/minecraft/world/entity/player/Player;Lnet/minecraft/world/InteractionHand;)Lnet/minecraft/world/InteractionResult;"
+      },
+      "net/mcreator/buxin/mixin/PolarBearMixin": {
+        "registerGoals": "Lnet/minecraft/world/entity/animal/PolarBear;m_8099_()V"
+      },
+      "net/mcreator/buxin/mixin/ThrownEnderperalMixin": {
+        "onHit": "Lnet/minecraft/world/entity/projectile/ThrownEnderpearl;m_6532_(Lnet/minecraft/world/phys/HitResult;)V",
+        "onHitEntity": "Lnet/minecraft/world/entity/projectile/ThrownEnderpearl;m_5790_(Lnet/minecraft/world/phys/EntityHitResult;)V"
+      },
+      "net/mcreator/buxin/mixin/MonsterMixin": {
+        "isDarkEnoughToSpawn": "Lnet/minecraft/world/entity/monster/Monster;m_219009_(Lnet/minecraft/world/level/ServerLevelAccessor;Lnet/minecraft/core/BlockPos;Lnet/minecraft/util/RandomSource;)Z"
+      },
+      "net/mcreator/buxin/mixin/TrailParticleMixin": {
+        "render": "Lyesman/epicfight/client/particle/TrailParticle;m_5744_(Lcom/mojang/blaze3d/vertex/VertexConsumer;Lnet/minecraft/client/Camera;F)V",
+        "Lyesman/epicfight/client/particle/TrailParticle;getLightColor(F)I": "Lyesman/epicfight/client/particle/TrailParticle;m_6355_(F)I"
+      },
+      "net/mcreator/buxin/mixin/GlowEffectMixin": {
+        "endOutlineBatch": "Lnet/minecraft/client/renderer/OutlineBufferSource;m_109928_()V"
+      },
+      "net/mcreator/buxin/mixin/ArrowMixin": {
+        "tick": "Lnet/minecraft/world/entity/projectile/Arrow;m_8119_()V"
+      }
+    }
+  }
+}

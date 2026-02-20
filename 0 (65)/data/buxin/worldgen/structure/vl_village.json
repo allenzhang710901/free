@@ -1,0 +1,56 @@
+{
+  // 用于结构行为的基础构建类（如额外的地形检查）
+  "type": "minecraft:jigsaw",
+
+// 使用模板池的JSON文件的地址
+"start_pool": "buxin:buxin_house/start_pool",
+
+// 结构分支产长度
+"size": 2,
+
+// 距离中心方块最大的生成距离
+"max_distance_from_center": 80,
+
+// 用于此结构可以生成的生物群系的标签
+"biomes": "#buxin:has_structure/vl_village",
+
+// 在何时生成该建筑，有10种时间节点可以选择
+// 表面结构的生成应该在植物和矿石的生成之前
+// 查看 GenerationStep.Feature类中的枚举你可以找到所有的step（时间节点）
+"step": "surface_structures",
+
+// 如果project_start_to_heightmap不存在，我们的建筑生成的y值在哪里
+// start_height 可以通过如下的方式获得一个在固定y之间的随机数高度: "max_inclusive": { "below_top": 10 }, "min_inclusive": { "above_bottom": 32 }
+// project_start_to_heightmap存在, 则y的数值和世界地面的y的数值相加
+// 因此如果start height 给出的是-5，那么建筑就会向地下凹陷5歌
+"start_height": {
+"absolute": 0
+},
+
+// 使得我们的建筑y的数值在start_hieght之上
+// 建筑生成在y的最终值.
+// WORLD_SURFACE_WG 会在第一个非空气的方块停止，所以这也是为什么在海洋方块的上方生成而不是深海
+"project_start_to_heightmap": "WORLD_SURFACE_WG",
+
+// Keep this false. This is only for vanilla legacy villages to make it spawn properly. We don&#39;t need no hacks here!
+// 不使用这里，这仅仅用于原版传奇村庄的生成
+"use_expansion_hack": false,
+
+// What mobs can spawn over time in the structure.
+// 随着时间的推移生成生物，
+// Make sure you add the mob to the right category (monster, creature, etc)
+// 增你的生物的时间，这里选择生成鹦鹉，
+"spawn_overrides": {
+"creature": {
+"bounding_box": "piece",
+"spawns": [
+{
+"type": "minecraft:parrot",
+"weight": 1,
+"minCount": 1,
+"maxCount": 4
+}
+]
+}
+}
+}

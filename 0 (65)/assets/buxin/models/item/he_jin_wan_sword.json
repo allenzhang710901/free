@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/he_jin_wan_dao_2",
+  "textures": {
+    "0": "buxin:blocks/he_jin_wan_dao_",
+    "particle": "buxin:items/he_jin_wan_dao_"
+  }
+}

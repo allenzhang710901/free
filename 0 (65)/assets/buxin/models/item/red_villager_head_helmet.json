@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "buxin:items/hong_cun_qi_tou_kui_wu_pin_"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/3ooo03",
+  "textures": {
+    "0": "buxin:blocks/303",
+    "particle": "buxin:items/303lian_dao_"
+  }
+}

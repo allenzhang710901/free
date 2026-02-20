@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 12",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond_block"
+    },
+    "2": {
+      "item": "buxin:diamond_2"
+    },
+    "3": {
+      "item": "buxin:diamond_2"
+    },
+    "4": {
+      "item": "buxin:specail_stick"
+    },
+    "5": {
+      "item": "buxin:diamond_2"
+    },
+    "7": {
+      "item": "buxin:specail_stick"
+    }
+  },
+  "result": {
+    "item": "buxin:diamond_giant_sword",
+    "count": 1
+  }
+}

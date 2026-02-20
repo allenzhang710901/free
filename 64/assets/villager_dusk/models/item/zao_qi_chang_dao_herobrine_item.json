@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/zao_qi_chang_dao_herobrine_item"
+  }
+}

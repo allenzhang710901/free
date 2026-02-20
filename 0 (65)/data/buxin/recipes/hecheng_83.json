@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1",
+    "23"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond_helmet"
+    },
+    "2": {
+      "item": "buxin:herobrine_diamond_sword"
+    },
+    "3": {
+      "item": "minecraft:iron_chestplate"
+    }
+  },
+  "result": {
+    "item": "buxin:herobrine_ds_spawn_egg",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/null_hoe",
+  "textures": {
+    "0": "buxin:item/null_hoe",
+    "particle": "buxin:item/null_hoe"
+  }
+}

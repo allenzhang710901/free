@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/paladinsword",
+  "textures": {
+    "0": "buxin:blocks/paladins_sword",
+    "particle": "buxin:items/paladins_sword"
+  }
+}

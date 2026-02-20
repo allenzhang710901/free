@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/tie_shou_ci_",
+  "textures": {
+    "0": "buxin:blocks/tie_shou_ci_",
+    "particle": "buxin:items/tie_shou_ci_"
+  }
+}

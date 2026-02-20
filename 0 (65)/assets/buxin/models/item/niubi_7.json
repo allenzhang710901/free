@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/ge_lei_fu_zuan_shi_chang_jian_",
+  "textures": {
+    "0": "buxin:blocks/zuan_shi_chang_jian_",
+    "particle": "buxin:items/zuan_shi_chang_jian_"
+  }
+}

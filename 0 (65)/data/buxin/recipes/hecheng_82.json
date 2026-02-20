@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:chun_cui_de_dimoand_hu_jia_helmet"
+    },
+    "3": {
+      "item": "buxin:qibinjian"
+    },
+    "4": {
+      "item": "buxin:chun_cui_de_dimoand_hu_jia_chestplate"
+    },
+    "5": {
+      "item": "minecraft:golden_apple"
+    },
+    "7": {
+      "item": "buxin:chun_cui_de_dimoand_hu_jia_boots"
+    }
+  },
+  "result": {
+    "item": "buxin:niubi_13_spawn_egg",
+    "count": 1
+  }
+}

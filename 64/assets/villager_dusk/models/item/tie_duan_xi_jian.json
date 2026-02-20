@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/tie_duan_xi_jian_",
+  "textures": {
+    "0": "villager_dusk:blocks/tie_duan_xi_jian_",
+    "particle": "villager_dusk:items/tie_duan_xi_jian_"
+  }
+}

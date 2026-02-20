@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/pi_sa_bing_"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/ying_chui_",
+  "textures": {
+    "0": "villager_dusk:blocks/ying_chui_",
+    "particle": "villager_dusk:items/ying_chui_"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/hei_fu_",
+  "textures": {
+    "0": "buxin:blocks/hei_fu_",
+    "particle": "buxin:items/hei_fu_"
+  }
+}

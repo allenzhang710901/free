@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "3": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "4": {
+      "item": "buxin:specail_stick"
+    },
+    "5": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "6": {
+      "item": "minecraft:crying_obsidian"
+    },
+    "7": {
+      "item": "minecraft:stick"
+    },
+    "8": {
+      "item": "minecraft:crying_obsidian"
+    }
+  },
+  "result": {
+    "item": "buxin:zhan_shen_she_ren",
+    "count": 1
+  }
+}

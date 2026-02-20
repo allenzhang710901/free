@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "buxin:paladinsword"
+    },
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "2": {
+      "item": "buxin:zuan_jian_2"
+    },
+    "3": {
+      "item": "minecraft:diamond"
+    },
+    "4": {
+      "item": "buxin:niubi_18_chestplate"
+    },
+    "5": {
+      "item": "minecraft:diamond"
+    },
+    "7": {
+      "item": "buxin:diamond_2"
+    }
+  },
+  "result": {
+    "item": "buxin:niubi_6_spawn_egg",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/hong_shi_zhong_jian_",
+  "textures": {
+    "0": "villager_dusk:blocks/hong_shi_zhong_jian_",
+    "particle": "villager_dusk:items/hong_shi_zhong_jian_"
+  }
+}

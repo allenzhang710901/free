@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "buxin:blocks/dwda",
+    "up": "buxin:blocks/dwda",
+    "north": "buxin:blocks/dwda",
+    "east": "buxin:blocks/dwda",
+    "south": "buxin:blocks/dwda",
+    "west": "buxin:blocks/dwda",
+    "particle": "buxin:blocks/dwda"
+  },
+  "render_type": "solid"
+}

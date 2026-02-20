@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/dark_greatsword",
+  "textures": {
+    "0": "buxin:blocks/dark_greatsword",
+    "particle": "buxin:items/dark_greatsword"
+  }
+}

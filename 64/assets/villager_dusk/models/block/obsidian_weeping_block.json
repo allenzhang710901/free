@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "up": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "north": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "east": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "south": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "west": "villager_dusk:blocks/ku_qi_hei_yao_shi_",
+    "particle": "villager_dusk:blocks/ku_qi_hei_yao_shi_"
+  },
+  "render_type": "solid"
+}

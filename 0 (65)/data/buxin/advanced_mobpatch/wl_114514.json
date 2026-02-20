@@ -1,0 +1,187 @@
+{
+	"model": "epicfight:entity/biped",
+	"armature": "epicfight:entity/biped",
+	"renderer": "player", 
+	"isHumanoid": true,
+	"faction": "undead",
+	"attributes": {
+		"impact": 0.0,
+		"armor_negation": 0.0,
+		"max_strikes": 150,
+		"chasing_speed": 1.5,
+        "scale": 1.0,
+		"counter_chance": 0.6,
+		"counter_cost": 2.0,
+		"block_stamina": 250.0,
+		"stamina_cost_multiply": 1.0,
+		"can_block_projectile": true
+	},
+	"default_livingmotions": {
+		"idle": "epicfight:biped/living/idle",
+		"mount": "epicfight:biped/living/mount",
+		"walk": "epicfight:biped/living/walk",
+		"chase": "epicfight:biped/living/run",
+		"death": "epicfight:biped/living/death"
+	},
+	"humanoid_weapon_motions": [
+		  {
+			"weapon_categories": ["axe", "hoe", "pickaxe", "shovel", "sword","ender_blaster"],
+			"style":"common",
+			"livingmotions": {
+				"chase": "epicfight:biped/living/run",
+                "walk": "epicfight:biped/living/walk"
+			}
+		  },
+              { 
+                  "weapon_categories": ["longsword","ender_blaster"],
+                  "style":"common", 
+                  "livingmotions": {
+                        "chase": "epicfight:biped/living/hold_longsword",
+                        "walk": "epicfight:biped/living/hold_longsword"
+                  }
+              }
+	],
+	"custom_guard_motion": [
+            { 
+                  "weapon_categories": ["longsword", "tachi","ender_blaster"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_longsword",
+				  "counter": "epicfight:biped/combat/tachi_auto2",
+				  "speed": 2
+            },
+			{ 
+                  "weapon_categories": ["axe", "hoe", "pickaxe", "shovel","ender_blaster"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_sword",
+				  "counter": "epicfight:biped/combat/sword_auto2",
+				  "speed": 3
+            },
+			{ 
+                  "weapon_categories": ["sword","ender_blaster"],
+                  "style":"two_hand", 
+                  "guard": "indestructible:guard/guard_dualsword",
+				  "counter": "epicfight:biped/combat/sword_dual_auto1",
+				  "speed": 3
+            },
+			{ 
+                  "weapon_categories": ["greatsword", "torment"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_greatsword",
+				  "counter": "epicfight:biped/combat/greatsword_auto2",
+				  "speed": 2
+            },
+			{ 
+                  "weapon_categories": ["spear,axe"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_spear",
+				  "counter": "epicfight:biped/combat/spear_twohand_auto2",
+				  "speed": 2
+            }
+			
+	],
+	"stun_animations": {
+		"short": "epicfight:biped/combat/hit_short",
+		"long": "epicfight:biped/combat/hit_long",
+		"knockdown": "epicfight:biped/combat/knockdown",
+		"fall": "epicfight:biped/living/landing"
+	},
+	"combat_behavior": [
+            {
+			"weapon_categories": ["fist","ender_blaster"],
+			"style": "common",
+			"behavior_series": [
+				{
+					"weight": 0.5,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.5, "max": 2.0}
+							],
+							"guard": 1,
+							"convert_time": 0.15
+						}
+                    ]                 
+				},
+			{
+					"weight": 80.5,
+					"canBeInterrupted": false,
+					"looping": true,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 3.5}
+							],
+							"animation": "wom:biped/skill/enderblaster_onehand_shoot_3",
+							"play_speed": 3.9
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_onehand_shoot_3",
+							"play_speed": 2.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_onehand_shoot_3",
+							"play_speed": 1.8
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_twohand_shoot_4",
+							"play_speed": 2.5
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_twohand_shoot_4",
+							"play_speed": 1.9
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_onehand_shoot_3",
+							"play_speed": 2.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 4.0}
+							],
+							"animation": "wom:biped/skill/enderblaster_twohand_shoot_4",
+							"play_speed": 2.3
+						},
+						{
+							"conditions": [
+								{"predicate":"random_chance", "chance": 4.0}
+							],
+							"animation": "epicfight:biped/skill/step_right",
+							"play_speed": 1.1
+						}
+					]
+				},
+                {
+					"weight": 99,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"guard_break", "invert": false}, {"predicate":"within_eye_height"}
+							],
+							"animation": "wom:biped/skill/enderblaster_twohand_shoot_4",
+							"play_speed": 1
+						}
+					]
+				}
+			]
+		}
+	]
+}

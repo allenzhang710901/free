@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/srcd.item",
+  "textures": {
+    "layer0": "buxin:items/ppp"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/hei_yao_shi_3",
+  "textures": {
+    "0": "buxin:blocks/dwda",
+    "particle": "buxin:items/1"
+  }
+}

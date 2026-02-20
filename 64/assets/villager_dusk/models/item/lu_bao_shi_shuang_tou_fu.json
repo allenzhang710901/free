@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/lu_bao_shi_shuang_tou_fu_",
+  "textures": {
+    "layer0": "villager_dusk:blocks/lu_bao_shi_shuang_tou_fu_",
+    "particle": "villager_dusk:items/lu_bao_shi_shuang_tou_fu_"
+  }
+}

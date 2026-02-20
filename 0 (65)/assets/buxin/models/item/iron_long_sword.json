@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/iron_long_sword",
+  "textures": {
+    "0": "buxin:blocks/7",
+    "particle": "buxin:items/tie_chang_jian_"
+  }
+}

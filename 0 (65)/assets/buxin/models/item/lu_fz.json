@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/lu_bao_shi_fu_",
+  "textures": {
+    "layer0": "buxin:blocks/lu_bao_shi_fu_",
+    "particle": "buxin:items/lu_bao_shi_fu_"
+  }
+}

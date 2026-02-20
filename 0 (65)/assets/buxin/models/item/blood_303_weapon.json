@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/blood_303_weapon.item",
+  "textures": {
+    "layer0": "buxin:items/1718418150794"
+  }
+}

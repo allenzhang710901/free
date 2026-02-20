@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/mo_fa_wu_pin_dun_pai_",
+  "textures": {
+    "0": "villager_dusk:blocks/mo_fa_wu_pin_dun_pai_",
+    "particle": "villager_dusk:items/mo_fa_wu_pin_dun_pai_"
+  }
+}

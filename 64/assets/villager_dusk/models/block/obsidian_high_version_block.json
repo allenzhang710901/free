@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "up": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "north": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "east": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "south": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "west": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_",
+    "particle": "villager_dusk:blocks/hei_yao_shi_gao_ban_ben_"
+  },
+  "render_type": "solid"
+}

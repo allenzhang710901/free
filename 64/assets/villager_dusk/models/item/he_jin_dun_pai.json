@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/he_jin_dun_pai_",
+  "textures": {
+    "0": "villager_dusk:blocks/he_jin_dun_pai_",
+    "particle": "villager_dusk:items/he_jin_dun_pai_"
+  }
+}

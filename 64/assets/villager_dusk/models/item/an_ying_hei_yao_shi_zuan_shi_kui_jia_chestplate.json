@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/an_ying_hei_yao_shi_zuan_shi_xiong_jia_"
+  }
+}

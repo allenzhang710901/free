@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/dark_herobrine_armor.item",
+  "textures": {
+    "layer0": "buxin:items/dark_herobrine_armor"
+  }
+}

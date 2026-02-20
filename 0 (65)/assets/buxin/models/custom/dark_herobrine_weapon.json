@@ -1,0 +1,118 @@
+{
+  "credit": "Made with Blockbench",
+  "parent": "dark_herobrine_weapon",
+  "texture_size": [
+    32,
+    32
+  ],
+  "elements": [
+    {
+      "from": [
+        6,
+        10,
+        -8
+      ],
+      "to": [
+        9,
+        13,
+        12
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            4,
+            4,
+            6,
+            6
+          ],
+          "texture": "#0"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5.5,
+            2
+          ],
+          "texture": "#0"
+        },
+        "south": {
+          "uv": [
+            5.5,
+            0,
+            7.5,
+            2
+          ],
+          "texture": "#0"
+        },
+        "west": {
+          "uv": [
+            0,
+            2,
+            5.5,
+            4
+          ],
+          "texture": "#0"
+        },
+        "up": {
+          "uv": [
+            2,
+            9.5,
+            0,
+            4
+          ],
+          "texture": "#0"
+        },
+        "down": {
+          "uv": [
+            4,
+            4,
+            2,
+            9.5
+          ],
+          "texture": "#0"
+        }
+      }
+    }
+  ],
+  "display": {
+    "thirdperson_righthand": {
+      "translation": [
+        0.5,
+        -5.75,
+        4.25
+      ]
+    },
+    "thirdperson_lefthand": {
+      "translation": [
+        -0.25,
+        -5.75,
+        -0.5
+      ]
+    },
+    "gui": {
+      "rotation": [
+        95.01,
+        -45.63,
+        93.59
+      ],
+      "translation": [
+        2.25,
+        -3.25,
+        0
+      ]
+    },
+    "fixed": {
+      "rotation": [
+        -90.61,
+        -35.74,
+        -90.35
+      ],
+      "translation": [
+        -1.75,
+        -0.5,
+        0
+      ]
+    }
+  }
+}

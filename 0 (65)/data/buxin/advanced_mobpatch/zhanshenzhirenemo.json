@@ -1,0 +1,151 @@
+{
+	"model": "epicfight:entity/biped",
+	"armature": "epicfight:entity/biped",
+	"renderer": "player", 
+	"isHumanoid": true,
+	"faction": "undead",
+	"attributes": {
+		"impact": 0.0,
+		"armor_negation": 0.0,
+		"max_strikes": 4,
+		"chasing_speed": 1.3,
+                                "scale": 1.0,
+                                "max_stamina": 700,
+                                "stamina_regan_multiply": 30.0
+                                
+	},
+	"default_livingmotions": {
+		"idle": "epicfight:biped/living/idle",
+		"walk": "epicfight:biped/living/walk",
+		"chase": "epicfight:biped/living/run",
+		"death": "epicfight:enderman/convert_rage"
+	},
+	"humanoid_weapon_motions": [
+              { 
+                  "weapon_categories": ["sword"],
+                  "style":"common", 
+                  "livingmotions": {
+                        "chase": "epicfight:biped/living/run",
+                        "walk": "epicfight:biped/living/walk"
+                  }
+              }
+	],
+	"custom_guard_motion": [
+			{ 
+                  "weapon_categories": ["greatsword"],
+                  "style":"common", 
+                  "guard": "indestructible:guard/guard_greatsword",
+				  "counter": "wom:biped/combat/torment_auto_1",
+                                                                  "stamina_cost_multiply": 50,
+				  "can_block_projectile" : true,
+                                                                  "play_speed": 2.0
+            }
+			
+	],
+	"stun_animations": {
+		"short": "epicfight:biped/combat/hit_short",
+		"long": "epicfight:biped/combat/hit_long",
+		"knockdown": "epicfight:biped/combat/knockdown",
+		"fall": "epicfight:biped/living/landing",
+                                "neutralize": "epicfight:biped/skill/guard_break1"
+	},
+	"combat_behavior": [
+                              {
+			"weapon_categories": ["greatsword"],
+			"style": "common",
+			"behavior_series": [
+				{
+					"weight": 5.0,
+					"canBeInterrupted": false,
+					"looping": false,
+					"behaviors": [
+						{
+							"conditions": [{"predicate":"attack_level", "min": 1, "max": 1}, {"predicate":"within_eye_height"}],
+							"guard": 40,
+							"counter": "wom:biped/combat/torment_auto_1",
+							"counter_cost": 1,
+							"counter_chance": 0.6,
+							"counter_speed": 0.9
+						}
+                    ]                 
+				},
+				{
+					"weight": 20.5,
+					"canBeInterrupted": true,
+					"looping": true,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/torment_charged_attack_2",	
+							"play_speed": 1.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/torment_charged_attack_3",	
+							"play_speed": 1.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/torment_auto_1",
+							"play_speed": 1.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/torment_auto_2",
+							"play_speed": 1.4
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/ruine_auto_2",
+							"play_speed": 1.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/ruine_auto_3",
+							"play_speed": 1.2
+						},
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 5.0}
+							],
+							"animation": "wom:biped/combat/torment_charged_attack_1",	
+							"play_speed": 1.4
+						}
+					]
+				}
+            ]
+        },
+        {
+        "weapon_categories": ["torment"],
+			"style": "common",
+			"behavior_series": [
+				{
+					"weight": 1000.5,
+					"canBeInterrupted": false,
+					"looping": true,
+					"behaviors": [
+						{
+							"conditions": [
+								{"predicate":"within_distance", "min": 0.0, "max": 10.0}
+							],
+							"animation": "wom:biped/skill/torment_berserk_airslam",
+							"play_speed": 1.0
+						}
+					]
+				}
+			]
+		}
+	]
+}

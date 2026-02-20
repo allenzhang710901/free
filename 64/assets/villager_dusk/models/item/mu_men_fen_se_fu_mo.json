@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/mu_men_fen_se_fu_mo_",
+  "textures": {
+    "0": "villager_dusk:blocks/mu_men_fen_se_fu_mo_",
+    "particle": "villager_dusk:items/mu_men_fen_se_fu_mo_"
+  }
+}

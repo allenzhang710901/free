@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/wei_da_de_jian_",
+  "textures": {
+    "0": "buxin:blocks/wei_da_de_jian_",
+    "particle": "buxin:items/wei_da_de_jian_"
+  }
+}

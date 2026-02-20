@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/null_shovel",
+  "textures": {
+    "0": "buxin:item/null_shovel",
+    "particle": "buxin:item/null_shovel"
+  }
+}

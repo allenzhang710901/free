@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "buxin:snakebs"
+    },
+    "1": {
+      "item": "buxin:snakebs"
+    },
+    "2": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "buxin:huo_qbj",
+    "count": 1
+  }
+}

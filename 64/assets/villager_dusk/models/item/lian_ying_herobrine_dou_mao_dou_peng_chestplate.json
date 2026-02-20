@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/lian_ying_herobrinedou_peng_"
+  }
+}

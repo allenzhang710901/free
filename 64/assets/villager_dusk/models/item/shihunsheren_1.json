@@ -1,0 +1,6 @@
+{
+  "parent": "villager_dusk:displaysettings/shihunsheren1.item",
+  "textures": {
+    "layer0": "villager_dusk:items/shihunsheren1"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/15",
+  "textures": {
+    "0": "buxin:blocks/15",
+    "particle": "buxin:items/15"
+  }
+}

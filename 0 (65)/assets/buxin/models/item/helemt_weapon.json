@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/helemt_herobrine_weapon.item",
+  "textures": {
+    "layer0": "buxin:items/1"
+  }
+}

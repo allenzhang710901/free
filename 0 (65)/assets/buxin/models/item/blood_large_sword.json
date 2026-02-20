@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/blood_greatsword2.item",
+  "textures": {
+    "layer0": "buxin:items/blood_sword"
+  }
+}

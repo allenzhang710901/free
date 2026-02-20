@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/ender_glock17.item",
+  "textures": {
+    "layer0": "buxin:items/ender_glock17"
+  }
+}

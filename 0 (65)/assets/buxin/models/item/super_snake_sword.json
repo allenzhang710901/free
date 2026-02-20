@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/super_snake_sword.item",
+  "textures": {
+    "layer0": "buxin:items/super_snake_sword_2"
+  }
+}

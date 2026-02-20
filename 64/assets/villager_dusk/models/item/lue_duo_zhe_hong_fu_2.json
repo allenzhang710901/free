@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/lue_duo_zhe_hong_fu_2",
+  "textures": {
+    "0": "villager_dusk:blocks/lue_duo_zhe_hong_fu_",
+    "particle": "villager_dusk:items/lue_duo_zhe_hong_fu_"
+  }
+}

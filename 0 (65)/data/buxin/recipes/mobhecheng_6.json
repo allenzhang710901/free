@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    " 7 "
+  ],
+  "key": {
+    "1": {
+      "item": "buxin:diamond_2"
+    },
+    "3": {
+      "item": "buxin:diamond_2"
+    },
+    "4": {
+      "item": "minecraft:trident"
+    },
+    "5": {
+      "item": "buxin:diamond_2"
+    },
+    "7": {
+      "item": "buxin:diamond_2"
+    }
+  },
+  "result": {
+    "item": "buxin:lanemobenti_spawn_egg",
+    "count": 1
+  }
+}

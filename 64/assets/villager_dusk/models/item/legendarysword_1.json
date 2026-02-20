@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/legendarysword_1",
+  "textures": {
+    "1": "villager_dusk:blocks/legendarysword_1",
+    "particle": "villager_dusk:items/legendary_sword_1"
+  }
+}

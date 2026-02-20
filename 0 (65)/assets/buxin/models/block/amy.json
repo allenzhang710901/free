@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "buxin:blocks/dark_obsidian",
+    "up": "buxin:blocks/dark_obsidian",
+    "north": "buxin:blocks/dark_obsidian",
+    "east": "buxin:blocks/dark_obsidian",
+    "south": "buxin:blocks/dark_obsidian",
+    "west": "buxin:blocks/dark_obsidian",
+    "particle": "buxin:blocks/dark_obsidian"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " 1 ",
+    "345",
+    "678"
+  ],
+  "key": {
+    "1": {
+      "item": "minecraft:diamond"
+    },
+    "3": {
+      "item": "minecraft:fire_charge"
+    },
+    "4": {
+      "item": "buxin:snakebs"
+    },
+    "5": {
+      "item": "minecraft:fire_charge"
+    },
+    "6": {
+      "item": "buxin:diamond_2"
+    },
+    "7": {
+      "item": "buxin:specail_stick"
+    },
+    "8": {
+      "item": "buxin:diamond_2"
+    }
+  },
+  "result": {
+    "item": "buxin:ice_and_fire_sword",
+    "count": 1
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/she_ren_",
+  "textures": {
+    "0": "buxin:blocks/uyuyuyuyuy",
+    "particle": "buxin:items/she_ren_"
+  }
+}

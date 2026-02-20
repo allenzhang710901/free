@@ -1,0 +1,29 @@
+{
+    "model": "epicfight:entity/biped",
+    "armature": "epicfight:entity/biped",
+    "renderer": "player",
+    "isHumanoid": true,
+    "faction": "villager",
+    "attributes": {
+        "impact": 0.5,
+        "armor_negation": 0.0,
+        "max_strikes": 1,
+        "chasing_speed": 0.7,
+                "scale": 1.0
+    },
+    "default_livingmotions": {
+        "idle": "buxin:biped/other/death_idle",
+        "walk": "buxin:biped/other/death_idle",
+        "chase": "buxin:biped/other/death_idle",
+        "mount": "buxin:biped/other/death_idle",
+        "fall": "buxin:biped/other/death_idle",
+        "death": "buxin:biped/other/death_idle"
+    },
+    "stun_animations": {
+        "short": "buxin:biped/other/death_idle",
+        "long": "buxin:biped/other/death_idle",
+        "knockdown": "buxin:biped/other/death_idle",
+        "fall": "buxin:biped/other/death_idle",
+        "neutralize": "buxin:biped/other/death_idle"
+    }
+}

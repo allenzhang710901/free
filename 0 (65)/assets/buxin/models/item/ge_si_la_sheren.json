@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/ge_si_la_sr.item",
+  "textures": {
+    "layer0": "buxin:items/gsl_new_2"
+  }
+}

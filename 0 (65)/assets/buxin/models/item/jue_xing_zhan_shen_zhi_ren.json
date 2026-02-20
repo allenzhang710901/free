@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/jx",
+  "textures": {
+    "0": "buxin:blocks/111",
+    "particle": "buxin:items/111"
+  }
+}

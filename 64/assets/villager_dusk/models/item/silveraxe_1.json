@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/silveraxe1",
+  "textures": {
+    "0": "villager_dusk:blocks/silveraxe1",
+    "particle": "villager_dusk:items/silveraxe1"
+  }
+}

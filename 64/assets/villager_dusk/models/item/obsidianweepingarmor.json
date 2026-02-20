@@ -1,0 +1,6 @@
+{
+  "parent": "villager_dusk:displaysettings/obsidianarmor.item",
+  "textures": {
+    "layer0": "villager_dusk:items/ku_qi_hei_yao_shi_"
+  }
+}

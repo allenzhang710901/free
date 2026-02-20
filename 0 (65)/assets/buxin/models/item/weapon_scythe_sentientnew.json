@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/weapon_scythe_sentientnew.item",
+  "textures": {
+    "layer0": "buxin:items/wddadwd"
+  }
+}

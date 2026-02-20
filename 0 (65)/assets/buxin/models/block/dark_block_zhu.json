@@ -1,0 +1,9 @@
+{
+  "parent": "buxin:custom/dark_block_zhu_block",
+  "textures": {
+    "all": "buxin:blocks/dark_obsidian",
+    "particle": "buxin:blocks/dark_obsidian",
+    "0": "buxin:blocks/dark_obsidian"
+  },
+  "render_type": "solid"
+}

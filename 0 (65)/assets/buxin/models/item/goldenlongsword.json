@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/golden_long_sword",
+  "textures": {
+    "0": "buxin:blocks/golden_long_sword",
+    "particle": "buxin:items/golden_long_sword"
+  }
+}

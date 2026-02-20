@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/rainbow_cat_sword",
+  "textures": {
+    "0": "buxin:blocks/rainbow_cat_sword",
+    "particle": "buxin:items/rainbow_cat_sword"
+  }
+}

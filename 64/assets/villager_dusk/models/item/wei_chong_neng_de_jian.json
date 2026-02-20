@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/wei_chong_neng_de_jian_",
+  "textures": {
+    "0": "villager_dusk:blocks/wei_chong_neng_de_jian_",
+    "particle": "villager_dusk:items/wei_chong_neng_de_jian_"
+  }
+}

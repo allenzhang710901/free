@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/ruby_sword",
+  "textures": {
+    "0": "buxin:blocks/ruby_sword_",
+    "particle": "buxin:items/ruby_sword_"
+  }
+}

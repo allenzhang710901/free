@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/geo_obsidian.item",
+  "textures": {
+    "layer0": "buxin:items/2231"
+  }
+}

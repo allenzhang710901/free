@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/iron.item",
+  "textures": {
+    "layer0": "buxin:items/90942423291812559"
+  }
+}

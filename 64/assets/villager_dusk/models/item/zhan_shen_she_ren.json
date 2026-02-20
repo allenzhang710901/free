@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/zhan_shen_she_ren_",
+  "textures": {
+    "0": "villager_dusk:blocks/zhan_shen_she_ren_",
+    "particle": "villager_dusk:items/zhan_shen_she_ren_"
+  }
+}

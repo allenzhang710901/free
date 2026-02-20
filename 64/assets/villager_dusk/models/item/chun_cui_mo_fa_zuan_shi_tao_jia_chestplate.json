@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/chun_cui_mo_fa_zuan_shi_xiong_jia_"
+  }
+}

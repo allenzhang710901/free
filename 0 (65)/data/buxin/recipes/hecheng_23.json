@@ -1,0 +1,29 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    " 4 ",
+    " 7 "
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond_block"
+    },
+    "1": {
+      "item": "buxin:diamond_2"
+    },
+    "2": {
+      "item": "minecraft:diamond_block"
+    },
+    "4": {
+      "item": "buxin:specail_stick"
+    },
+    "7": {
+      "item": "buxin:specail_stick"
+    }
+  },
+  "result": {
+    "item": "buxin:diamond_spear",
+    "count": 1
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "villager_dusk:items/mr.colderzuan_shi_xiong_jia_"
+  }
+}

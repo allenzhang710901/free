@@ -1,0 +1,8 @@
+{
+  "parent": "buxin:custom/w",
+  "textures": {
+    "0": "buxin:blocks/lu_se_zhan_shen_zhi_ren_",
+    "missing": "buxin:blocks/ls2",
+    "particle": "buxin:items/lu_se_zhan_shen_zhi_ren_"
+  }
+}

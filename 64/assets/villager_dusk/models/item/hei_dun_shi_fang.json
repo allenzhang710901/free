@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/hei_dun_shi_fang_",
+  "textures": {
+    "0": "villager_dusk:blocks/hei_dun_shi_fang_",
+    "particle": "villager_dusk:items/hei_dun_shi_fang_"
+  }
+}

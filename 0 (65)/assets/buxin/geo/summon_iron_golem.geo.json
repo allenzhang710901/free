@@ -1,0 +1,123 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.summon_iron_golem",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 10,
+				"visible_bounds_height": 4.5,
+				"visible_bounds_offset": [0, 1.75, 0]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "iron_block",
+					"parent": "root",
+					"pivot": [0, 0, 0]
+				},
+				{
+					"name": "2",
+					"parent": "iron_block",
+					"pivot": [0, 20, -12],
+					"cubes": [
+						{
+							"origin": [-8, 12.77766, -17.82673],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [0, 0], "uv_size": [16, 16]},
+								"east": {"uv": [0, 16], "uv_size": [16, 16]},
+								"south": {"uv": [16, 0], "uv_size": [16, 16]},
+								"west": {"uv": [16, 16], "uv_size": [16, 16]},
+								"up": {"uv": [0, 32], "uv_size": [16, 16]},
+								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "1",
+					"parent": "iron_block",
+					"pivot": [0, 20, -19],
+					"cubes": [
+						{
+							"origin": [-8, 16, -24],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [48, 16], "uv_size": [16, 16]},
+								"east": {"uv": [32, 48], "uv_size": [16, 16]},
+								"south": {"uv": [48, 32], "uv_size": [16, 16]},
+								"west": {"uv": [48, 48], "uv_size": [16, 16]},
+								"up": {"uv": [0, 64], "uv_size": [16, 16]},
+								"down": {"uv": [64, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "3",
+					"parent": "iron_block",
+					"pivot": [-15, 19, 23],
+					"cubes": [
+						{
+							"origin": [-8, 16.76477, 7.38906],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [16, 64], "uv_size": [16, 16]},
+								"east": {"uv": [64, 16], "uv_size": [16, 16]},
+								"south": {"uv": [32, 64], "uv_size": [16, 16]},
+								"west": {"uv": [64, 32], "uv_size": [16, 16]},
+								"up": {"uv": [48, 64], "uv_size": [16, 16]},
+								"down": {"uv": [64, 64], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "4",
+					"parent": "iron_block",
+					"pivot": [0, 0, 0],
+					"cubes": [
+						{
+							"origin": [-8, 0, -8],
+							"size": [16, 16, 16],
+							"uv": {
+								"north": {"uv": [16, 32], "uv_size": [16, 16]},
+								"east": {"uv": [32, 16], "uv_size": [16, 16]},
+								"south": {"uv": [32, 32], "uv_size": [16, 16]},
+								"west": {"uv": [0, 48], "uv_size": [16, 16]},
+								"up": {"uv": [48, 0], "uv_size": [16, 16]},
+								"down": {"uv": [16, 64], "uv_size": [16, -16]}
+							}
+						}
+					]
+				},
+				{
+					"name": "pumpkin",
+					"parent": "root",
+					"pivot": [-48, 16, -35],
+					"cubes": [
+						{
+							"origin": [-37.42263, 5.38309, -83.29492],
+							"size": [16, 16, 16],
+							"pivot": [-29.42263, -26.61691, -75.29492],
+							"rotation": [0, 90, 0],
+							"uv": {
+								"north": {"uv": [80, 64], "uv_size": [16, 16]},
+								"east": {"uv": [64, 64], "uv_size": [16, 16]},
+								"south": {"uv": [80, 64], "uv_size": [16, 16]},
+								"west": {"uv": [64, 64], "uv_size": [16, 16]},
+								"up": {"uv": [64, 64], "uv_size": [16, 16]},
+								"down": {"uv": [32, 16], "uv_size": [16, -16]}
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

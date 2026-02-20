@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/hei_yao_shi_2.item",
+  "textures": {
+    "layer0": "buxin:items/an_ying_hei_yao_shi_"
+  }
+}

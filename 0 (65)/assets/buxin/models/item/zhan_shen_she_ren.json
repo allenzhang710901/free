@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/hei_ren",
+  "textures": {
+    "0": "buxin:blocks/hei_ren",
+    "particle": "buxin:items/hei_ren"
+  }
+}

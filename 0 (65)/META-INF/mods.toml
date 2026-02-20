@@ -1,0 +1,90 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="Custom License"
+
+[[mods]]
+logoFile = "logo.png"
+modId="buxin"
+version="3.4.6"
+displayName="Villager Dusk"
+credits="哔哩哔哩@玩了114514分钟mc"
+displayURL="https://villager-dusk.github.io"
+authors="哔哩哔哩@玩了114514分钟mc"
+
+[[dependencies.buxin]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20]"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="geckolib"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="epicfight"
+    mandatory=false
+    versionRange="[19,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="wom"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="player_mobs"
+    mandatory=false
+    versionRange="[3,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="indestructible"
+    mandatory=false
+    versionRange="[19,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="falchionmoveset"
+    mandatory=false
+    versionRange="[19,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="impactful"
+    mandatory=false
+    versionRange="[19,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="architectury"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="aaa_particles"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.buxin]]
+    modId="dualaxes"
+    mandatory=false
+    versionRange="[0,)"
+    ordering="NONE"
+    side="BOTH"
+

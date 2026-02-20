@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/null_sword",
+  "textures": {
+    "0": "buxin:item/null_sword",
+    "particle": "buxin:item/null_sword"
+  }
+}

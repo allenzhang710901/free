@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/an_he_jin_duan_dao_",
+  "textures": {
+    "0": "villager_dusk:blocks/an_he_jin_duan_dao_",
+    "particle": "villager_dusk:items/an_he_jin_duan_dao_"
+  }
+}

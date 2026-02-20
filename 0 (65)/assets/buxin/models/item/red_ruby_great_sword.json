@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/hong_bao_shi_ju_jian_",
+  "textures": {
+    "0": "buxin:blocks/hong_bao_shi_ju_jian_",
+    "particle": "buxin:items/hong_bao_shi_ju_jian_"
+  }
+}

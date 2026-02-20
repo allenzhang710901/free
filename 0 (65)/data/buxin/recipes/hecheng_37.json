@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "item": "buxin:changdao"
+    }
+  },
+  "result": {
+    "item": "buxin:changdao_2",
+    "count": 1
+  }
+}

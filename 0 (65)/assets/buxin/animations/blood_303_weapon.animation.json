@@ -1,0 +1,9 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.blood_303_weapon.new": {
+			"loop": true
+		}
+	},
+	"geckolib_format_version": 2
+}

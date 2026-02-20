@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "buxin:blocks/better_diamond_block",
+    "up": "buxin:blocks/better_diamond_block",
+    "north": "buxin:blocks/better_diamond_block",
+    "east": "buxin:blocks/better_diamond_block",
+    "south": "buxin:blocks/better_diamond_block",
+    "west": "buxin:blocks/better_diamond_block",
+    "particle": "buxin:blocks/better_diamond_block"
+  },
+  "render_type": "solid"
+}

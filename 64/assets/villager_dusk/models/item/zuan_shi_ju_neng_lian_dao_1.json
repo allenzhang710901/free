@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/zuan_shi_ju_neng_lian_dao_1",
+  "textures": {
+    "0": "villager_dusk:blocks/zuan_shi_ju_neng_lian_dao_1",
+    "particle": "villager_dusk:items/zuan_shi_ju_neng_lian_dao_1"
+  }
+}

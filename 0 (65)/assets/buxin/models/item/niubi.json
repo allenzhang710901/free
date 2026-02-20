@@ -1,0 +1,8 @@
+{
+  "parent": "buxin:custom/aaaa",
+  "textures": {
+    "0": "buxin:blocks/ls1",
+    "1": "buxin:blocks/ls2",
+    "particle": "buxin:items/wwwwwwwwww"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "0",
+    "1",
+    "2"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:diamond"
+    },
+    "1": {
+      "item": "buxin:specail_stick"
+    },
+    "2": {
+      "item": "buxin:diamond_2"
+    }
+  },
+  "result": {
+    "item": "buxin:diamond_insult_sword",
+    "count": 1
+  }
+}

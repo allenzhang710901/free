@@ -1,0 +1,19 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="All Right reserved"
+
+[[mods]]
+modId="villager_dusk"
+version="1.0.0"
+displayName="VillagerDuskMod"
+credits="114514"
+displayURL="villager-dusk.github.io"
+authors="114514,114514,114514"
+
+[[dependencies.villager_dusk]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2]"
+    ordering="NONE"
+    side="BOTH"
+

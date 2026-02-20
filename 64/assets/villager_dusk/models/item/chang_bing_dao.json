@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/chang_bing_dao_",
+  "textures": {
+    "0": "villager_dusk:blocks/chang_bing_dao_",
+    "particle": "villager_dusk:items/chang_bing_dao_"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/shadow_legendary_sword.item",
+  "textures": {
+    "layer0": "buxin:items/shadow_legendary_sword_2"
+  }
+}

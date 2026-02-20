@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/te_zhi_diao_yu_gan_",
+  "textures": {
+    "0": "villager_dusk:blocks/te_zhi_diao_yu_gan_",
+    "particle": "villager_dusk:items/te_zhi_diao_yu_gan_"
+  }
+}

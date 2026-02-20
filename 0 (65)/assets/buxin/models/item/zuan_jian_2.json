@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/gravehong_jian_",
+  "textures": {
+    "0": "buxin:blocks/gravehong_se_fu_mo_2",
+    "particle": "buxin:items/gravehong_se_fu_mo_2"
+  }
+}

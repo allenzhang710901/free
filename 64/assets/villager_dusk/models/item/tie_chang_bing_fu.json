@@ -1,0 +1,7 @@
+{
+  "parent": "villager_dusk:custom/tie_chang_bing_fu_",
+  "textures": {
+    "0": "villager_dusk:blocks/tie_chang_bing_fu_",
+    "particle": "villager_dusk:items/tie_chang_bing_fu_"
+  }
+}

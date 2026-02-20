@@ -1,0 +1,7 @@
+{
+  "parent": "buxin:custom/the_book_of_jie_mo",
+  "textures": {
+    "0": "buxin:blocks/4",
+    "particle": "buxin:items/the_book_of_jie_mo"
+  }
+}

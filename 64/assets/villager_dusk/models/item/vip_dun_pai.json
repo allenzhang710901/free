@@ -1,0 +1,8 @@
+{
+  "parent": "villager_dusk:custom/vipdun_pai_",
+  "textures": {
+    "0": "villager_dusk:blocks/vipdun_pai_",
+    "missing": "villager_dusk:blocks/vipdun_pai_",
+    "particle": "villager_dusk:items/vipdun_pai_"
+  }
+}

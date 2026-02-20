@@ -1,0 +1,6 @@
+{
+  "parent": "buxin:displaysettings/zszr.item",
+  "textures": {
+    "layer0": "buxin:items/zszr"
+  }
+}
